@@ -141,9 +141,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-             &trans     &trans    &kp UP     &trans     &trans    &trans      &trans         &trans        &trans    &trans
+             &trans     &trans    &kp UP     &trans     &trans    &trans      &trans         &trans        &trans    &kp LC(BACKSPACE)
              &trans     &kp LEFT  &kp DOWN   &kp RIGHT  &trans    &kp PG_UP   &kp PAGE_DOWN  &trans        &kp PIPE  &trans
-&kp LS(TAB)  &kp LC(Z)  &trans    &kp LC(C)  &kp LC(V)  &trans    &kp HOME    &kp END        &trans        &trans    &kp BACKSLASH  &kp AMPS
+&kp LS(TAB)  &kp LC(Z)  &trans    &kp LC(C)  &kp LC(V)  &trans    &kp HOME    &kp END        &trans        &trans    &kp BACKSLASH      &kp AMPS
                                   &trans     &trans     &trans    &kp DELETE  &trans         &kp LEFT_GUI
             >;
         };
