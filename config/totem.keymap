@@ -70,26 +70,9 @@
             key-positions = <23 24>;
         };
 
-        r_ctrl {
-            bindings = <&kp RIGHT_CONTROL>;
+        l_guy {
+            bindings = <&kp LEFT_GUI>;
             key-positions = <32 37>;
-        };
-    };
-
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
         };
     };
 
@@ -141,10 +124,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-             &trans     &trans    &kp UP     &trans     &trans    &trans      &trans         &trans        &trans    &kp LC(BACKSPACE)
-             &trans     &kp LEFT  &kp DOWN   &kp RIGHT  &trans    &kp PG_UP   &kp PAGE_DOWN  &trans        &kp PIPE  &trans
-&kp LS(TAB)  &kp LC(Z)  &trans    &kp LC(C)  &kp LC(V)  &trans    &kp HOME    &kp END        &trans        &trans    &kp BACKSLASH      &kp AMPS
-                                  &trans     &trans     &trans    &kp DELETE  &trans         &kp LEFT_GUI
+             &trans     &trans    &kp UP     &trans     &trans    &trans      &trans         &trans  &trans    &kp LC(BACKSPACE)
+             &trans     &kp LEFT  &kp DOWN   &kp RIGHT  &trans    &kp PG_UP   &kp PAGE_DOWN  &trans  &kp PIPE  &trans
+&kp RG(TAB)  &kp LC(Z)  &trans    &kp LC(C)  &kp LC(V)  &trans    &kp HOME    &kp END        &trans  &trans    &kp BACKSLASH      &kp AMPS
+                                  &trans     &trans     &trans    &kp DELETE  &trans         &trans
             >;
         };
 
